@@ -1,0 +1,8 @@
+p {
+    color: #6FA2B3;
+    font-size: 72px;
+}
+p:nth-child(even) {
+    color: #7B3BD0;
+}
+/* Jakub Kołdysz */

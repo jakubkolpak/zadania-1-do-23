@@ -1,0 +1,75 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<title>Kołdysz Z4_html</title>
+</head>
+<body>
+
+<h1 align="center">Sposoby podłączania CSS do kodu strony WWW</h1>
+
+<h2><u><b>1) Zewnętrzny arkusz stylów</b></u></h2>
+<table border="1" cellpadding="10" cellspacing="0" width="80%" align="center">
+<tr><td>
+<textarea rows="5" cols="80" readonly>
+<head>
+  <link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+</textarea>
+</td></tr>
+</table>
+<p>Zewnętrzny arkusz stylów jest zwykłym plikiem tekstowym z rozszerzeniem <b>.css</b>. Znacznik <b>&lt;link&gt;</b> umieszczamy w nagłówku dokumentu (sekcja <b>&lt;head&gt;</b>). Można dołączyć dowolną liczbę zewnętrznych arkuszy stylów.</p>
+
+<h2><u><b>2) Styl lokalny (styl wpisany, liniowy, linijkowy)</b></u></h2>
+<table border="1" cellpadding="10" cellspacing="0" width="80%" align="center">
+<tr><td>
+<textarea rows="3" cols="80" readonly>
+<selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+</textarea>
+</td></tr>
+</table>
+<p>Styl lokalny pozwala na nadanie formatowania <b>konkretnemu pojedynczemu elementowi</b> strony. Jest wstawiany w tej samej linii, w której znajduje się element formatowany.</p>
+
+<h2><u><b>3) Wewnętrzny arkusz stylów</b></u></h2>
+<table border="1" cellpadding="10" cellspacing="0" width="80%" align="center">
+<tr><td>
+<textarea rows="7" cols="80" readonly>
+<head>
+  <style type="text/css">
+    selektor1 { cecha: wartość; cecha2: wartość2... }
+    selektor2 { cecha: wartość; cecha2: wartość2... }
+  </style>
+</head>
+</textarea>
+</td></tr>
+</table>
+<p>Wewnętrzny arkusz stylów wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami <b>&lt;head&gt;</b> a <b>&lt;/head&gt;</b>). Można go zastosować, gdy elementy występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty.</p>
+
+<h2><u><b>4) Alternatywny arkusz stylów</b></u></h2>
+<table border="1" cellpadding="10" cellspacing="0" width="80%" align="center">
+<tr><td>
+<textarea rows="6" cols="80" readonly>
+<head>
+  <link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+  <link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+  <link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+</textarea>
+</td></tr>
+</table>
+<p>Alternatywny arkusz stylów pozwala na zdefiniowanie kilku arkuszy, z których użytkownik może wybrać preferowany styl wyświetlania strony.</p>
+
+<h2><u><b>5) Import arkusza stylów</b></u></h2>
+<table border="1" cellpadding="10" cellspacing="0" width="80%" align="center">
+<tr><td>
+<textarea rows="4" cols="80" readonly>
+<style type="text/css">
+  @import url(adres zewnętrznego arkusza stylów);
+</style>
+</textarea>
+</td></tr>
+</table>
+<p>Polecenie importu można wstawić w <b>wewnętrznym arkuszu stylów</b> lub w <b>zewnętrznym arkuszu stylów</b>. Wszystkie polecenia importu muszą znajdować się na początku arkusza stylów, przed właściwymi regułami CSS.</p>
+
+</body>
+</html>
+<!-- Kołdysz Z4_html -->

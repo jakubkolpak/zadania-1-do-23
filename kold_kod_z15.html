@@ -1,0 +1,58 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<title>Kołdysz - Kod zadania 15</title>
+</head>
+<body>
+<h2>Kod pliku kold_z15.html</h2>
+<textarea rows="30" cols="100" readonly>
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<title>Kołdysz - Zadanie 15</title>
+<LINK href="kold_z15.css" rel="stylesheet" type="text/CSS">
+</head>
+<body>
+<p>Autor: Jakub Kołdysz klasa 2W</p>
+<p>mam na imię Jakub czyli pięć liter J=5</p>
+<p>mam na nazwisko Kołdysz czyli siedem liter N=7</p>
+<p>mój numer z dziennika to 10</p>
+<p>data urodzenia: 10.11.2006, numer buta=9</p>
+<p>numer miesiąca urodzenia=11(listopad)</p>
+<p>numer dnia urodzenia=10(dziesiąty dzień)</p>
+<hr>
+definiowanie koloru znacznika p<br>
+Zmiana kolor liter --> sposobem pierwszym z tabeli/instrukcja<br>
+100+numer miesiąca urodzenia=100+11=(111)10=(6F)H<br>
+150+numer dnia urodzenia=150+10=(160)10=(A0)H<br>
+50+numer buta=50+9=(59)10=(3B)H<br>
+czyli kolor w HEXA #6FA03B dla znacznika p<br>
+wpisz: znacznik p ---> {color:#6FA03B;}, wielkość liter 10+N=17mm
+<hr>
+definiowanie koloru znacznika body<br>
+Zmiana kolor liter--> sposobem czwartym z tabeli/instrukcja<br>
+definiowanie koloru znacznika body<br>
+R=125+numer dnia urodzenia=125+10=135 R=135/255*100%=53%<br>
+G=50+numer buta=50+9=59 G=59/255*100%=23%<br>
+B=200+numer miesiąca urodzenia=200+11=211 B=211/255*100%=83%<br>
+czyli kolor w RGB 53%,23%,83% dla znacznika body<br>
+znacznik body ---> {color: rgb(53%,23%,83%);}, wielkość liter 10+J=15mm
+</body>
+</html>
+<!-- Jakub Kołdysz -->
+</textarea>
+<h2>Kod pliku kold_z15.css</h2>
+<textarea rows="10" cols="100" readonly>
+p {
+    color: #6FA03B;
+    font-size: 17mm;
+}
+body {
+    color: rgb(53%,23%,83%);
+    font-size: 15mm;
+}
+/* Jakub Kołdysz */
+</textarea>
+</body>
+</html>
+<!-- Jakub Kołdysz -->

@@ -1,0 +1,77 @@
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<title>Kołdysz Z9_html</title>
+</head>
+<body style="font-family: Arial;">
+<h1>Temat: Opis stylu zewnętrznego</h1>
+
+<ol>
+<li>
+<h1>Składnia teoretyczna arkusza CSS</h1>
+<table border="1" cellpadding="10" cellspacing="0">
+<tr>
+<td>
+<pre>
+selektor {
+    cecha1: wartość1;
+    cecha2: wartość2;
+}
+</pre>
+</td>
+</tr>
+</table>
+<p>Selektor wskazuje element HTML, a w nawiasach klamrowych umieszczamy deklaracje stylu.</p>
+</li>
+<li>
+<h1>Gdzie wstawiany jest styl zewnętrzny i ile razy może wystąpić?</h1>
+<p>Styl zewnętrzny dołączamy w sekcji <b>&lt;head&gt;</b> dokumentu przez znacznik <b>&lt;link&gt;</b>. W jednym dokumencie można dołączyć wiele arkuszy CSS.</p>
+</li>
+<li>
+<h1>Najprostsza forma wstawiania stylu zewnętrznego</h1>
+<table border="1" cellpadding="10" cellspacing="0">
+<tr>
+<td>
+<pre>
+&lt;link href="nazwa_pliku.css" rel="stylesheet" type="text/CSS"&gt;
+</pre>
+</td>
+</tr>
+</table>
+<p>Taki zapis umieszczamy wewnątrz sekcji <b>&lt;head&gt;</b>.</p>
+</li>
+<li>
+<h1>Czy można dołączyć kilka arkuszy CSS i jaka zasada obowiązuje?</h1>
+<p>Tak. Można podłączyć wiele arkuszy. Przeglądarka czyta je od góry do dołu, a przy konflikcie zwykle wygrywa reguła późniejsza (o ile specyficzność jest taka sama).</p>
+</li>
+<li>
+<h1>Co przy konflikcie tych samych stylów?</h1>
+<p>Decyduje kaskadowość CSS: ważność (<b>!important</b>), specyficzność selektora, a następnie kolejność deklaracji.</p>
+</li>
+<li>
+<h1>Jak definiuje się style w różnych arkuszach dla tego samego elementu?</h1>
+<p>Każdy arkusz może zawierać własne reguły. Dla tego samego selektora obowiązuje ta reguła, która ma wyższy priorytet według zasad kaskady.</p>
+</li>
+<li>
+<h1>Jak tworzy się i edytuje pliki CSS w edytorze tekstowym?</h1>
+<p>Tworzymy zwykły plik z rozszerzeniem <b>.css</b>, zapisujemy reguły CSS i edytujemy go tak jak plik tekstowy.</p>
+</li>
+<li>
+<h1>Jak tworzy się i edytuje pliki CSS w specjalnym edytorze?</h1>
+<p>W edytorach CSS/IDE można korzystać z podpowiedzi składni, kolorowania kodu i automatycznego formatowania.</p>
+</li>
+<li>
+<h1>Jakie rozszerzenie posiada plik arkusza styli?</h1>
+<p>Plik arkusza styli ma rozszerzenie <b>.css</b>.</p>
+</li>
+<li>
+<h1>Dwie zalety zewnętrznego arkusza styli</h1>
+<ol>
+<li>Jedna zmiana w pliku CSS może zmienić wygląd wielu stron jednocześnie.</li>
+<li>Kod HTML jest czytelniejszy, bo oddzielamy treść od wyglądu.</li>
+</ol>
+</li>
+</ol>
+</body>
+</html>
+<!-- Kołdysz Z9_html -->

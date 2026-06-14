@@ -1,0 +1,33 @@
+#pogrubienie_koldysz {
+font-size: 32px;
+color: #87AAD7;
+font-weight: bold;
+}
+#pochylona_koldysz {
+font-size: 22pt;
+color: #4BD796;
+font-style: italic;
+}
+#index_gorny_koldysz {
+font-size: 0.5cm;
+color: #1DD678;
+vertical-align: super;
+}
+#index_dolny_koldysz {
+font-size: 0.8cm;
+color: rgb(72%, 27%, 15%);
+vertical-align: sub;
+}
+#mono_koldysz {
+font-size: 12px;
+color: #69B464;
+font-family: monospace;
+}
+#powiekszenie_koldysz {
+color: #64C596;
+font-size: larger;
+}
+#pomniejszenie_koldysz {
+color: rgb(68%, 47%, 20%);
+font-size: smaller;
+}
